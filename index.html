@@ -4,12 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Service Fit</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background-color: #0b4f6c;
+      color: white;
+      padding: 30px 20px 20px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #0b4f6c;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0b4f6c;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #0b4f6c;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      background-color: #096284;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <img src="img/logo.png" alt="Logotipo Service Fit" />
+    <img src="logo.png" alt="Logotipo Service Fit" />
     <h1>Service Fit</h1>
     <p>Conectando você aos melhores serviços</p>
   </header>
@@ -17,7 +79,6 @@
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
-    <a href="#clientes">Clientes</a>
     <a href="#contato">Contato</a>
   </nav>
 
@@ -37,15 +98,6 @@
     </ul>
   </section>
 
-  <section id="clientes">
-    <h2>Clientes</h2>
-    <div class="clientes-logos">
-      <img src="img/H2B.PNG" alt="Logotipo H2B">
-      <img src="img/Italac.PNG" alt="Logotipo Italac">
-      <img src="img/SerraAlta_br.PNG" alt="Logotipo Serra Alta">
-    </div>
-  </section>
-
   <section id="contato" class="contact">
     <h2>Contato</h2>
     <p>Entre em contato conosco pelos canais abaixo:</p>
@@ -59,100 +111,3 @@
 
 </body>
 </html>
-Arquivo CSS: style.css
-Crie um novo arquivo chamado style.css na mesma pasta que o seu index.html e cole o código abaixo nele.
-
-CSS
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-header {
-  background-color: #0b4f6c;
-  color: white;
-  padding: 30px 20px 20px 20px;
-  text-align: center;
-}
-
-header img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-nav {
-  background-color: #0b4f6c;
-  text-align: center;
-  padding: 10px 0;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  color: #0b4f6c;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-footer {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 20px;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #0b4f6c;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  background-color: #096284;
-}
-
-/* Estilo da seção de clientes */
-.clientes-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  align-items: center;
-  justify-items: center;
-}
-
-.clientes-logos img {
-  max-width: 180px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.clientes-logos img:hover {
-  transform: scale(1.1);
-}
